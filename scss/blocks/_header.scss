@@ -179,3 +179,50 @@
 .phone__text:hover {
   text-decoration: none;
 }
+
+@include breakpoint-down(1210px) {
+  .working-hours__box {
+    display: none;
+  }
+
+  .phone__box {
+    margin-left: auto;
+  }
+}
+
+@include breakpoint-down(1010px) {
+  .site-header__left-text {
+    display: none;
+  }
+}
+
+@include breakpoint-down(720px) {
+  .site-header__right {
+    display: none;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .site-logo {
+    width: 100px;
+    height: auto;
+  }
+
+  .call-button {
+    width: 100%;
+    max-width: 140px;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .call-button::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url("../img/icon-pen.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+  }
+}
