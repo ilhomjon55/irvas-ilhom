@@ -1,0 +1,181 @@
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.site-header__left {
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  flex-shrink: 0;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
+
+.site-header__left-text {
+  width: 100%;
+  max-width: 220px;
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0096dc;
+}
+
+.call-button {
+  width: 100%;
+  max-width: 170px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #55a831;
+  border-radius: 10px;
+  border: 2px solid #55a831;
+}
+
+.call-button:hover {
+  opacity: 0.8;
+}
+
+.call-button:active {
+  opacity: 0.6;
+}
+
+.call-button::before {
+  flex-shrink: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url("../img/icon-pen.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+@include retina-bg {
+  .call-button::before {
+    background-image: url("../img/icon-pen@2x.png");
+  }
+}
+
+.site-header__right {
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  align-items: center;
+}
+
+.working-hours__box {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.working-hours__box::before {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-right: 20px;
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+@include retina-bg {
+  .working-hours__box::before {
+    background-image: url("../img/clock@2x.png");
+  }
+}
+
+.working-hours__day {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.working-hours__time {
+  display: block;
+  color: #333333;
+  font-family: "Open Sans - Semibold";
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.phone__box {
+  display: flex;
+}
+
+.phone__box::before {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 20px;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+@include retina-bg {
+  .phone__box::before {
+    background-image: url("../img/phone@2x.png");
+  }
+}
+
+.phone__number {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 23px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.phone__number:hover {
+  opacity: 0.8;
+}
+
+.phone__number:active {
+  opacity: 0.6;
+}
+
+.phone__text {
+  display: block;
+  color: #0089cc;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.phone__text:hover {
+  text-decoration: none;
+}
