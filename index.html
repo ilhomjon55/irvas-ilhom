@@ -23,7 +23,7 @@
         </p>
       </div><!-- site-header__left -->
       <!-- CALL-BUTTON -->
-      <a class="call-button" href="registration.html">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
+      <a class="call-button" href="registration.html">вызвать замерщика</a>
       <div class="site-header__right">
         <div class="working-hours__box">
           <div class="working-hours__info">
@@ -40,9 +40,44 @@
       </div><!-- site-header__right -->
     </div><!-- container -->
   </header>
-  <!-- SITE-CONTENT -->
+  <!--  ================================ SITE-CONTENT ================================  -->
   <main class="site-content">
-
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h2 class="visually-hidden">Irvas company has lots of advantages</h2>
+      <div class="container">
+        <div class="hero__left">
+          <div class="hero__info">
+            <h3 class="hero__info-heading">Остекление балконов "под ключ"</h3>
+            <h4 class="hero__info-price">за 12 800 рублей!</h4>
+          </div><!-- hero__info -->
+          <ul class="hero__advantages-list">
+            <li class="hero__advantage hero__advantage-1 hero__advantages-item">
+              Высокое качество
+            </li>
+            <li class="hero__advantage hero__advantage-2 hero__advantages-item">
+              Быстрый монтаж
+            </li>
+            <li class="hero__advantage hero__advantage-3 hero__advantages-item">
+              Гарантия 3 года
+            </li>
+            <li class="hero__advantage hero__advantage-4 hero__advantages-item">
+              Вывоз мусора
+            </li>
+          </ul>
+        </div><!-- hero__left -->
+        <!-- HERO-FORM -->
+        <form class="hero__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <h4 class="hero__form-heading">Запишитесь сегодня на</h4>
+          <h5 class="hero__form-subheading">бесплатный замер</h5>
+          <input class="hero__form-input" placeholder="Введите ваше имя" type="text" name="user_name" required>
+          <input class="hero__form-input" placeholder="+7 (___) ___-__-__" type="tel" name="user_phone"
+            pattern="^(?:\d{10,12}|\+\d{10,12}|\w+@\w+\.\w{2,4})$" required>
+          <button class="hero__form-button">вызвать замерщика</button>
+          <span class="hero__form-privacy">Ваши данные конфиденциальны</span>
+        </form>
+      </div><!-- container -->
+    </section>
   </main>
   <script src="js/main.js"> </script>
 </body>
