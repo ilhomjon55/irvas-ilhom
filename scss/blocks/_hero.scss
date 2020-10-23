@@ -7,6 +7,12 @@
   background-size: 1920px 640px;
 }
 
+@include retina-bg {
+  .hero {
+    background-image: url("../img/hero-bg@2x.jpg");
+  }
+}
+
 .hero .container {
   display: flex;
   align-items: center;
@@ -94,6 +100,25 @@
   background-image: url("../img/icon-advantage-4.png");
 }
 
+@include retina-bg {
+
+  .hero__advantage-1::before {
+    background-image: url("../img/icon-advantage-1@2x.png");
+  }
+
+  .hero__advantage-2::before {
+    background-image: url("../img/icon-advantage-2@2x.png");
+  }
+
+  .hero__advantage-3::before {
+    background-image: url("../img/icon-advantage-3@2x.png");
+  }
+
+  .hero__advantage-4::before {
+    background-image: url("../img/icon-advantage-4@2x.png");
+  }
+}
+
 // HERO-FORM
 
 .hero__form {
@@ -125,7 +150,7 @@
 
 .hero__form-input {
   display: block;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -137,16 +162,6 @@
   width: 100%;
   display: block;
   margin-bottom: 15px;
-  padding: 30px 25px 30px 30px;
-  text-transform: uppercase;
-  color: #222222;
-  font-size: 16px;
-  font-weight: 400;
-  box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
-  border-radius: 10px;
-  border: 1px solid #ffc600;
-  background-color: #e8e8e8;
-  background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
 }
 
 .hero__form-privacy {
@@ -177,6 +192,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+
+  @include retina-bg {
+    .hero__left {
+      background-image: url("../img/hero-bg@2x.jpg");
+    }
   }
 
   .hero__form {

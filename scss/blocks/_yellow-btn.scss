@@ -1,0 +1,20 @@
+.yellow-btn {
+  padding: 30px 25px 30px 30px;
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 2px 20px rgba(255, 153, 0, 0.4);
+  border-radius: 10px;
+  border: 1px solid #ffc600;
+  background-color: #e8e8e8;
+  background-image: linear-gradient(to bottom, #ffed26 0%, #ffb400 100%);
+}
+
+.yellow-btn:hover {
+  background-image: linear-gradient(to bottom, #ffb400 0%, #ffed26 100%);
+}
+
+.yellow-btn:active {
+  background-image: linear-gradient(to bottom, #ffb400 0%, #ffed26 100%);
+}
