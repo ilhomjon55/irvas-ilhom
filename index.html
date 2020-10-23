@@ -82,15 +82,16 @@
     <section class="catalogue">
       <div class="container">
         <h2 class="catalogue__heading">Остекление балконов и лоджий</h2>
-        <ul class="window-types__list">
-          <li class="window-type">Деревянное остекление</li>
-          <li class="window-type">Алюминиевое остекление</li>
-          <li class="window-type">Остекление пластиковыми рамами</li>
-          <li class="window-type">Французское остекление (панорамное)</li>
-          <li class="window-type">Остекление с выносом</li>
-        </ul>
+        <div class="window-types__list">
+          <a class="window-type window-type-1 window-type--active" href="#">Деревянное остекление</a>
+          <a class="window-type window-type-2" href="#">Алюминиевое остекление</a>
+          <a class="window-type window-type-3" href="#">Остекление пластиковыми рамами</a>
+          <a class="window-type window-type-4" href="#">Французское остекление (панорамное)</a>
+          <a class="window-type window-type-5" href="#">Остекление с выносом</a>
+        </div>
         <ul class="ready-windows__list">
-          <li class="ready-window">
+          <li class="ready-window ready-window-1">
+            <h3 class="ready-window__heading">холодное</h3>
             <img class="ready-window__img" src="img/window-lg-1.jpg" srcset="img/window-lg-1@2x.jpg" alt="Ready window"
               width="466" height="300">
             <ul class="ready-window__desctiption-list">
@@ -104,10 +105,11 @@
                 <span class="ready-window__price">2600 руб.кв.м.</span>
                 <span class="ready-window__sub-info">под ключ с установкой</span>
               </div><!-- ready-window__bottom-info -->
-              <button class="ready-window__bottom-btn yellow-btn">рассчитать стоимость</button>
+              <button class="ready-window__bottom-btn yellow-btn" type="button">рассчитать стоимость</button>
             </div><!-- ready-window__bottom -->
           </li>
-          <li class="ready-window">
+          <li class="ready-window ready-window-2">
+            <h3 class="ready-window__heading">теплое</h3>
             <img class="ready-window__img" src="img/window-lg-2.jpg" srcset="img/window-lg-2@2x.jpg" alt="Ready window"
               width="466" height="300">
             <ul class="ready-window__desctiption-list">
@@ -121,7 +123,7 @@
                 <span class="ready-window__price">4000 руб.кв.м.</span>
                 <span class="ready-window__sub-info">под ключ с установкой</span>
               </div><!-- ready-window__bottom-info -->
-              <button class="ready-window__bottom-btn yellow-btn">рассчитать стоимость</button>
+              <button class="ready-window__bottom-btn yellow-btn" type="button">рассчитать стоимость</button>
             </div><!-- ready-window__bottom -->
           </li>
         </ul>
