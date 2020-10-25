@@ -149,6 +149,7 @@
 }
 
 .hero__form-input {
+  width: 100%;
   display: block;
   text-align: left;
   margin-bottom: 20px;
@@ -171,6 +172,15 @@
   font-weight: 300;
 }
 
+@include breakpoint-down(1100px) {
+  .hero__info-heading {
+    font-size: 22px;
+  }
+
+  .hero__info-price {
+    font-size: 28px;
+  }
+}
 
 @include breakpoint-down(950px) {
   .hero {
@@ -216,14 +226,16 @@
   }
 }
 
+@include breakpoint-down(650px) {
+  .hero__left {
+    padding: 20px 10px;
+  }
+}
+
 @include breakpoint-down(600px) {
   .hero__info-heading {
     font-size: 16px;
     margin-bottom: 15px;
-  }
-
-  .hero__info-price {
-    font-size: 32px;
   }
 
   .hero__advantages-list {
