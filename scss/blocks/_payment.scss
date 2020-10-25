@@ -1,0 +1,257 @@
+.payment {
+  background-color: #fff;
+}
+
+.payment>.container {
+  padding: 80px 20px;
+}
+
+.payment__heading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.payment__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -20px;
+}
+
+.payment__item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.payment__item::before {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.payment__item-1::before {
+  background-image: url("../img/payment-1.png");
+}
+
+.payment__item-2::before {
+  background-image: url("../img/payment-2.png");
+}
+
+.payment__item-3::before {
+  background-image: url("../img/payment-3.png");
+}
+
+@include retina-bg {
+
+  .payment__item-1::before {
+    background-image: url("../img/payment-1@2x.png");
+  }
+
+  .payment__item-2::before {
+    background-image: url("../img/payment-2@2x.png");
+  }
+
+  .payment__item-3::before {
+    background-image: url("../img/payment-3@2x.png");
+  }
+}
+
+@include breakpoint-down(950px) {
+  .payment__list {
+    justify-content: center;
+    margin: -30px;
+  }
+
+  .payment__item {
+    justify-content: center;
+    margin: 30px;
+  }
+}
+
+
+// DISCOUNT
+
+.discount__wrapper {
+  background-image: url("../img/payment-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1920px 600px;
+}
+
+.discount__wrapper .container {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount__info {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 50px;
+}
+
+.discount__heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  color: #008cce;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.discount__txt {
+  margin-top: 0;
+  margin-bottom: 80px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.discount__timer {
+  width: 100%;
+  max-width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.discount__timer-heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-family: "Open Sans - Semibold";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.discount__timer-list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount__timer-item {
+  text-align: center;
+}
+
+.discount__timer-top {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px 5px;
+  color: #efefef;
+  font-size: 28px;
+  font-weight: 400;
+  background-image: linear-gradient(to bottom, #393939 0%, #141414 100%);
+  border-radius: 10px;
+}
+
+.discount__timer-bottom {
+  color: #333333;
+  font-family: "Open Sans - Semibold";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+.discount__form {
+  width: 100%;
+  max-width: 370px;
+  text-align: center;
+  margin-left: auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.discount__form-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.discount__form-subheading {
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.discount__form-input {
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.discount__form-button {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.discount__form-privacy {
+  display: block;
+  color: #666666;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+@include breakpoint-down(950px) {
+  .discount__wrapper {
+    background-image: none;
+    background-color: #f7f7f7;
+  }
+
+  .discount__wrapper .container {
+    flex-direction: column;
+  }
+
+  .discount__info {
+    max-width: 85%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .discount__timer {
+    margin: 0 auto;
+  }
+
+  .discount__form {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@include breakpoint-down(500px) {
+  .discount__heading {
+    font-size: 28px;
+  }
+}
