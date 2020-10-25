@@ -1,0 +1,309 @@
+.kitchen {
+  background-color: #f7f7f7;
+}
+
+.kitchen .container {
+  padding: 80px 20px;
+}
+
+.kitchen__heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 80px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.kitchen__heading::after {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px;
+  height: 2px;
+  background-image: url("../img/heading-line.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.kitchen__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.kitchen__item {
+  position: relative;
+  z-index: 1;
+}
+
+.kitchen__item+.kitchen__item::before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 100%;
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.05;
+  content: "";
+}
+
+.kitchen__inner {
+  display: block;
+  text-align: center;
+  padding: 40px 34px;
+  text-decoration-style: dotted;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.kitchen__item--active .kitchen__inner {
+  position: relative;
+  z-index: 1;
+  border-top: 10px solid #0d8fe3;
+  text-decoration: none;
+  color: #0d8fe3;
+}
+
+.kitchen__item--active .kitchen__inner::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.05;
+  content: "";
+}
+
+.kitchen__item--active .kitchen__inner::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 15px solid #0d8fe3;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  content: "";
+}
+
+.kitchen__examples-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.kitchen__example {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.kitchen__lg-img {
+  flex-shrink: 0;
+
+}
+
+.kitchen__materials-list {
+  @include reset-list;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kitchen__material {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  padding: 15px;
+  color: #333333;
+}
+
+.kitchen__material::before {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-radius: 50%;
+  content: "";
+}
+
+.kitchen__material-1::before {
+  background-image: url("../img/kitchen-1.jpg");
+}
+
+.kitchen__material-2::before {
+  background-image: url("../img/kitchen-2.jpg");
+}
+
+.kitchen__material-3::before {
+  background-image: url("../img/kitchen-3.jpg");
+}
+
+.kitchen__material-4::before {
+  background-image: url("../img/kitchen-4.jpg");
+}
+
+.kitchen__material-5::before {
+  background-image: url("../img/kitchen-5.jpg");
+}
+
+.kitchen__material-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kitchen__material-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.kitchen__material-price {
+  display: block;
+  margin-top: auto;
+  color: #0d8fe3;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.kitchen__material-bottom-txt {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kitchen__form {
+  width: 100%;
+  max-width: 370px;
+  text-align: center;
+  margin-left: auto;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.kitchen__form-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.kitchen__form-subheading {
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.kitchen__form-input {
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.kitchen__form-button {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.kitchen__form-privacy {
+  display: block;
+  color: #666666;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+@include breakpoint-down(1150px) {
+
+  .kitchen__examples-wrapper {
+    flex-direction: column;
+  }
+
+  .kitchen__example {
+    margin-bottom: 20px;
+  }
+
+  .kitchen__materials-list {
+    justify-content: center;
+  }
+
+  .kitchen__form {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+}
+
+@include breakpoint-down(850px) {
+  .kitchen__list {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+@include breakpoint-down(630px) {
+  .kitchen__list {
+    max-width: 400px;
+  }
+
+  .kitchen__example {
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down(400px) {
+  .kitchen__heading {
+    font-size: 24px;
+  }
+
+  .kitchen__list {
+    max-width: 200px;
+  }
+
+  .kitchen__form-heading {
+    font-size: 16px;
+  }
+
+  .kitchen__form-subheading {
+    font-size: 20px;
+  }
+}
