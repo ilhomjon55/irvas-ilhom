@@ -36,6 +36,12 @@
   content: "";
 }
 
+@include retina-bg {
+  .kitchen__heading::after {
+    background-image: url("../img/heading-line@2x.png");
+  }
+}
+
 .kitchen__list {
   @include reset-list;
   display: flex;
@@ -170,6 +176,28 @@
 
 .kitchen__material-5::before {
   background-image: url("../img/kitchen-5.jpg");
+}
+
+@include retina-bg {
+  .kitchen__material-1::before {
+    background-image: url("../img/kitchen-1@2x.jpg");
+  }
+
+  .kitchen__material-2::before {
+    background-image: url("../img/kitchen-2@2x.jpg");
+  }
+
+  .kitchen__material-3::before {
+    background-image: url("../img/kitchen-3@2x.jpg");
+  }
+
+  .kitchen__material-4::before {
+    background-image: url("../img/kitchen-4@2x.jpg");
+  }
+
+  .kitchen__material-5::before {
+    background-image: url("../img/kitchen-5@2x.jpg");
+  }
 }
 
 .kitchen__material-name {

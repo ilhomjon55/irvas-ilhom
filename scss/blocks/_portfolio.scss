@@ -36,6 +36,12 @@
   content: "";
 }
 
+@include retina-bg {
+  .portfolio__heading::after {
+    background-image: url("../img/heading-line@2x.png");
+  }
+}
+
 .portfolio__list {
   @include reset-list;
   display: flex;
@@ -78,4 +84,10 @@
   background-size: contain;
   background-position: center center;
   content: "";
+}
+
+@include retina-bg {
+  .portfolio__item::before {
+    background-image: url("../img/icon-mignifier@2x.png");
+  }
 }
