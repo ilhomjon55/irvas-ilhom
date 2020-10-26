@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: -20px;
 }
 
 .payment__item {
@@ -75,12 +74,12 @@
 @include breakpoint-down(950px) {
   .payment__list {
     justify-content: center;
-    margin: -30px;
+
   }
 
   .payment__item {
     justify-content: center;
-    margin: 30px;
+
   }
 }
 
