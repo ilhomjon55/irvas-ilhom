@@ -47,15 +47,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: -40px -110px;
 }
 
 .guarantee__item {
   width: 100%;
-  max-width: 170px;
+  max-width: 250px;
   text-align: center;
   display: block;
-  margin: 40px 110px;
+  margin: 30px;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
@@ -135,11 +134,5 @@
     font-size: 24px;
   }
 
-  .guarantee__list {
-    margin: -35px -50px;
-  }
 
-  .guarantee__item {
-    margin: 35px 50px;
-  }
 }
