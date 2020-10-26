@@ -43,15 +43,14 @@
   @include reset-list;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 -50px;
   margin-bottom: 40px;
 }
 
 .window-type {
   width: 126px;
-  margin: 50px;
+  margin: 40px;
   text-align: center;
   color: #249ae6;
   font-size: 18px;
@@ -74,6 +73,7 @@
   width: 100px;
   height: 100px;
   display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center center;

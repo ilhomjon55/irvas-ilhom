@@ -45,7 +45,11 @@
 .kitchen__list {
   @include reset-list;
   display: flex;
+  text-align: center;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 70px;
 }
 
@@ -299,19 +303,9 @@
   }
 }
 
-@include breakpoint-down(850px) {
-  .kitchen__list {
-    width: 100%;
-    max-width: 580px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
+
 
 @include breakpoint-down(630px) {
-  .kitchen__list {
-    max-width: 400px;
-  }
 
   .kitchen__example {
     flex-direction: column;
@@ -323,9 +317,7 @@
     font-size: 24px;
   }
 
-  .kitchen__list {
-    max-width: 200px;
-  }
+
 
   .kitchen__form-heading {
     font-size: 16px;
