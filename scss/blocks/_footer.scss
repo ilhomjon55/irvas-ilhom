@@ -1,0 +1,48 @@
+.site-footer {
+  background-color: #fff;
+}
+
+.site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 35px 20px;
+}
+
+.footer__copyright {
+  margin: 0;
+  width: 100%;
+  max-width: 180px;
+  color: #333333;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.site-footer .site-logo {
+  margin: 0 20px;
+}
+
+@include breakpoint-down(600px) {
+
+  .site-footer .container {
+    justify-content: center;
+  }
+
+  .site-footer .site-logo {
+    order: -1;
+    margin: 20px 20px;
+  }
+
+  .footer__right {
+    margin: 20px 20px;
+  }
+}
+
+@include breakpoint-down(360px) {
+  .footer__copyright {
+    text-align: center;
+  }
+
+}
